@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BharatRide - Book Commercial Cars Across India</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">
+        <i class="fas fa-car-side"></i> Bharat<span>Ride</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#search">Search</a></li>
+        <li><a href="#routes">Popular Routes</a></li>
+        <li><a href="#contact">Book / Contact</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Book Commercial Cars Across India</h1>
+      <p>Safe • Affordable • Reliable intercity & outstation trips</p>
+      <a href="#search" class="btn">Search Route & Price</a>
+    </div>
+  </section>
+
+  <!-- Search Section -->
+  <section id="search" class="search-section">
+    <div class="container">
+      <h2>Find Your Ride</h2>
+      <form id="search-form" class="search-box">
+        <div class="form-group">
+          <label><i class="fas fa-map-marker-alt"></i> From</label>
+          <input type="text" id="from" placeholder="City or Pickup Point" required>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-map-marker-alt"></i> To</label>
+          <input type="text" id="to" placeholder="Destination City" required>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-calendar"></i> Date</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="form-group">
+          <label><i class="fas fa-car"></i> Vehicle Type</label>
+          <select id="vehicle">
+            <option value="sedan">Sedan (4 seater)</option>
+            <option value="suv">SUV (6-7 seater)</option>
+            <option value="innova">Innova / Crysta</option>
+            <option value="tempo">Tempo Traveller</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-search">Search Price</button>
+      </form>
+
+      <!-- Results -->
+      <div id="results" class="results hidden">
+        <h3>Available Options</h3>
+        <div id="price-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Routes -->
+  <section id="routes" class="routes-section">
+    <div class="container">
+      <h2>Popular Routes Across India</h2>
+      <div class="routes-grid">
+        <div class="route-card">
+          <h3>Delhi → Jaipur</h3>
+          <p>From ₹2,800</p>
+          <span>Sedan • 5-6 hrs</span>
+        </div>
+        <div class="route-card">
+          <h3>Mumbai → Pune</h3>
+          <p>From ₹2,200</p>
+          <span>Sedan • 3-4 hrs</span>
+        </div>
+        <div class="route-card">
+          <h3>Bangalore → Mysore</h3>
+          <p>From ₹2,500</p>
+          <span>Sedan • 3 hrs</span>
+        </div>
+        <div class="route-card">
+          <h3>Chennai → Pondicherry</h3>
+          <p>From ₹2,400</p>
+          <span>Sedan • 3 hrs</span>
+        </div>
